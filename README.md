@@ -4,7 +4,7 @@
 
 1. Hoàn thành toàn bộ cả các page (trừ các page chi tiết) đúng theo thiết kế
 2. Sử dụng html, css, js. Không viết nest css và php
-3. Bảo bảo responsive
+3. Đảm bảo responsive
 
 ### Tài nguyên:
 
