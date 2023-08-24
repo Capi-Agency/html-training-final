@@ -70,10 +70,6 @@ h3 {
     color: var(--primary);
     text-align: center;
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
@@ -163,6 +159,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
+
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header img {
@@ -273,7 +275,7 @@ main {
 
     /* Delete Later */
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
     /* Delete Later */
 
     justify-content: center;
@@ -416,10 +418,9 @@ main {
 }
 
 .project-btn:hover {
-    background-color: var(--link);
+    background-color: var(--primary);
     border: none;
-    border: 1px solid var(--link);
-
+    color: var(--secondary-4);
 }
 
 
@@ -463,13 +464,11 @@ main {
 
 .main-services {
     width: 100%;
-    height: auto;
-    padding: 120px 0 60px 0;
+    height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
 }
 
 .main-services img {
@@ -477,6 +476,7 @@ main {
     height: auto;
     object-fit: cover;
 }
+
 .services-heading {
     display: flex;
     flex-direction: column;
@@ -492,9 +492,12 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 60px;
-    z-index: 0;
 
-    padding: 24px 375px;
+    padding: 0 375px;
+
+    position: relative;
+    left: 0;
+    top: -320px;
 }
 
 .services-layout {
@@ -509,12 +512,160 @@ main {
     align-items: center;
     width: 100%;
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.20);
+    background-color: var(--secondary-4);
 
     padding: 16px;
     gap: 24px;
 }
 
+.services-heading>p {
+    color: var(--secondary-3);
+}
+
+.services-heading>h3 {
+    color: var(--secondary-4);
+}
+
 .services-layout_item img {
     width: 56px;
     height: 56px;
+}
+
+.services-layout_item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Partners */
+
+.main-partners {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-partners img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.partners-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+
+    padding: 0 375px;
+
+    position: relative;
+    left: 0;
+    top: -240px;
+}
+
+.partners-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.partners-layout {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    gap: 32px;
+}
+
+.partners-heading>p,
+h3 {
+    color: var(--secondary-4);
+}
+
+.partners-layout_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 24px 28px;
+    align-items: center;
+    background-color: var(--secondary-4);
+}
+
+.partners-layout_item img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* News */
+
+.main-news {
+    width: 100%;
+    display: flex;
+    padding: 0 375px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.news-heading>h3 {
+    color: var(--primary);
+}
+
+.news-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.news-layout {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    width: 369px;
+    gap: 24px;
+}
+
+.news-item img {
+    width: 268px;
+    aspect-ratio: auto 16 / 9;
+
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.news-title > h3 {
+    color: var(--primary);
+    text-align: start;
+}
+.news-title > h6 {
+    text-align: start;
 }
