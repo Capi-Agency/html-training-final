@@ -587,6 +587,10 @@ main {
     gap: 8px;
 }
 
+.services-layout_item__content>h3 {
+    color: var(--primary);
+}
+
 /* Partners */
 
 .main-partners {
@@ -883,7 +887,7 @@ textarea::placeholder {
     justify-content: flex-end;
 }
 
-.form-row2 > button {
+.form-row2>button {
     background-color: var(--secondary-4);
     border: none;
     text-decoration: none;
