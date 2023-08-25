@@ -169,6 +169,11 @@ span {
     text-transform: uppercase;
 }
 
+.btn-nav_active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
 .btn-nav:hover {
     color: var(--primary);
     font-weight: 700;
