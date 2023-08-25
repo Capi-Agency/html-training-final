@@ -1,3 +1,4 @@
+
 h1 {
     color: #111;
     font-family: Roboto;
@@ -87,6 +88,7 @@ p {
     align-items: center;
     gap: 897px;
     background: #FFF;
+
 }
 
 .menu {
@@ -106,11 +108,17 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+    list-style-type: none;
+    width: 78px;
+    height: 18px;
+}
+.menu .item {
+    width: 84px;
+    height: 18px;
+    color: #000;
 }
 
-li {
-    list-style-type: none;
-}
+li {}
 
 .section1 {
     display: inline-flex;
@@ -298,10 +306,11 @@ li {
 }
 
 .post-list h3 {
+    height: 48px;
     overflow: hidden;
     color: #7E7D7D;
     text-overflow: ellipsis;
-    whitespace: nowrap;
+    white-space: wrap;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -309,54 +318,106 @@ li {
     line-height: 24px;
     /* 150% */
 }
+
 .post-list h5 {
     color: #111;
-font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px; /* 200% */
-letter-spacing: 1.32px;
-text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 200% */
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
 }
+.section5 p {
+    height: 64px;
+}
+
 .section6 {
     display: flex;
-width: 1170px;
-align-items: flex-start;
-gap: 100px;
-padding: 120px 375px 0px 375px;
+    width: 1170px;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 120px 375px 0px 375px;
 }
+
 .section6 .info {
     display: flex;
-flex-direction: column;
-align-items: center;
-gap: 80px;
-flex: 1 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    flex: 1 0 0;
 }
+
 .section6 .info .info1 {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-align-self: stretch;
-& h3 {width: 569.872px;}
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    & h3 {
+        width: 569.872px;
+    }
 }
+
 .section6 .info .info2 {
     display: flex;
-align-items: flex-start;
-gap: 80px;
-align-self: stretch;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
 }
+
 .input {
     display: flex;
-width: 500px;
-flex-direction: column;
-align-items: flex-start;
-gap: 20px;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
+
 .input .item {
     display: flex;
-align-items: flex-start;
-gap: 20px;
-align-self: stretch;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.footer-item {
+    width: 1170px;
+    height: 204px;
+    display: flex;
+    padding: 0px 375px 0px 375px;
+}
+
+.footer-item .footer-item-list {
+    display: inline-flex;
+    padding: 0px 124.222px 27.234px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.footer-item .footer-item-list2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.footer {
+    display: flex;
+    width: 1170px;
+    padding: 140px 0px 147px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-item2 {
+    display: flex;
+    padding: 6px 0px;
+    justify-content: space-between;
+    align-items: center;
 }
