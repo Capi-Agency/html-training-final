@@ -68,7 +68,7 @@ h2 {
 h3 {
     font-size: var(--font-title-1);
     color: var(--primary);
-    text-align: initial;
+    text-align: center;
 
     font-style: normal;
     font-weight: 600;
@@ -297,11 +297,11 @@ span {
     align-items: flex-start;
 }
 
-.contact-hd_title > .overlay-heading > h3 {
+.contact-hd_title>.overlay-heading>h3 {
     text-align: start;
 }
 
-.contact-hd_title > h6 {
+.contact-hd_title>h6 {
     text-align: start;
 }
 
@@ -344,6 +344,7 @@ span {
     border-style: inset;
     border-width: 1px;
 }
+
 /* Button */
 button {
     all: unset;
@@ -420,25 +421,24 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.btn-link {
+    display: flex;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 16px;
+    text-align: center;
+
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
 .btn a:hover {
     background-color: var(--link);
     color: var(--secondary-4);
     border: none;
-}
-
-.project-btn {
-    height: auto;
-    color: var(--secondary-4);
-    border-color: var(--primary);
-    padding: 16px 24px;
-    border: 1px solid var(--secondary-0);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.project-btn:hover {
-    background-color: var(--primary);
-    border: none;
-    color: var(--secondary-4);
 }
 
 /* Header */
