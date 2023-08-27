@@ -43,7 +43,8 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+.caption-small {
     font-family: "Roboto", var(--font-family);
 }
 
@@ -51,7 +52,6 @@ h1 {
     font-size: var(--font-banner);
     color: var(--secondary-4);
     text-align: center;
-    font-style: normal;
     font-weight: 700;
     line-height: 56px;
 }
@@ -60,7 +60,6 @@ h2 {
     font-size: var(--font-title-2);
     color: var(--primary);
     text-align: center;
-    font-style: normal;
     line-height: 48px;
     letter-spacing: 0.9px;
 }
@@ -70,7 +69,6 @@ h3 {
     color: var(--primary);
     text-align: center;
 
-    font-style: normal;
     font-weight: 600;
     line-height: 32px;
 }
@@ -79,7 +77,6 @@ h4 {
     font-size: var(--font-body-3);
     color: var(--primary);
     text-align: center;
-    font-style: normal;
     font-weight: 500;
     line-height: 32px;
 }
@@ -88,7 +85,6 @@ h5 {
     font-size: var(--font-body-2);
     color: var(--primary);
     text-align: center;
-    font-style: normal;
     font-weight: 500;
     line-height: 28px;
 }
@@ -97,7 +93,6 @@ h6 {
     font-size: var(--font-body-1);
     color: var(--secondary-1);
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     line-height: 32px;
 }
@@ -106,7 +101,6 @@ p {
     font-size: var(--font-small);
     color: var(--secondary-1);
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
@@ -116,7 +110,6 @@ a {
     font-size: var(--font-tag);
     color: var(--secondary-0);
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 2px;
@@ -127,9 +120,16 @@ span {
     font-size: var(--font-small-0);
     color: var(--secondary-1);
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+.caption-small {
+    font-size: var(--font-small-0);
+    color: var(--secondary-1);
+    text-align: center;
+    font-weight: 400;
+    line-height: 16px;
 }
 
 /* === CSS Component Styled ===*/
@@ -330,7 +330,6 @@ span {
 
 .detail-content>span {
     color: var(--primary);
-    font-style: normal;
     font-weight: 500;
     line-height: 20px;
 }
