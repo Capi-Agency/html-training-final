@@ -1,5 +1,5 @@
 /* Letter */
-.letter-container {
+.letter-ctn {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -8,51 +8,208 @@
     gap: 80px;
 }
 
-.letter-container img {
-    width: 33%;
+.letter-ctn img {
+    width: 43%;
     object-fit: cover;
-    padding: 0 0;
 }
 
 .letter-layout {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: calc(100% - 33% - 80px);
+    width: calc(100% - 43% - 80px);
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.letter-layout-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
+.letter-layout>.overlay-heading>p3 {
+    text-align: start;
 }
 
 .letter-layout>h6 {
     text-align: start;
 }
 
-.letter-layout-heading>h2 {
-    text-align: start;
+/* Infor */
+.infor-ctn {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    gap: 80px;
 }
 
-.letter-layout-content {
+.infor-ctn>img {
+    width: calc(100% - 53% + 80px);
+    object-fit: cover;
+}
+
+.infor-layout {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 53%;
+}
+
+.infor-content {
+    display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.letter-layout-content>h6 {
+.infor-content>h6 {
     text-align: start;
 }
 
-.letter-layout-content>h6>span {
+/* Philo */
+
+.overlay-body_content>h1 {
+    color: none;
+    text-shadow:
+        -1px -1px 0 var(--primary),
+        1px -1px 0 var(--primary),
+        -1px 1px 0 var(--primary),
+        1px 1px 0 var(--primary);
+}
+
+.overlay-heading>p {
+    color: var(--secondary-3);
+}
+
+.overlay-heading>h3 {
+    color: var(--secondary-4);
+}
+
+/* exporters */
+
+.exporters-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 60px;
+
+    padding: 40px 0;
+}
+
+.exporters-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+    column-gap: 60px;
+}
+
+.exporters-item {
+    display: flex;
+    gap: 32px;
+
+    >h4 {
+        text-align: start;
+    }
+}
+
+.exporters-brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+
+    padding-right: 8px;
+    border-right: 1px solid var(--secondary-2);
+}
+
+.exporters-ctn>.overlay-heading>p {
+    color: var(--secondary-1);
+}
+
+.exporters-ctn>.overlay-heading>h3 {
     color: var(--primary);
-    font-size: var(--font-body-1);
+}
+
+/* fields */
+
+.fields-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 60px;
+
+    padding: 40px 0;
+}
+
+.fields-layout {
+    display: flex;
+    gap: 60px;
+}
+
+.fields-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    width: 33%;
+
+    border: 1px solid #CCC;
+    position: relative;
+}
+
+.fields-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 200px;
+    padding: 0 24px 24px 0;
+
+    position: absolute;
+    top: -4%;
+    left: -4%;
+
+    background-color: var(--secondary-4);
+}
+
+.fields-tab>p {
+    color: var(--secondary-2);
+}
+
+.fields-tab>p {
+    text-align: start;
+}
+
+
+
+.fields-tab>p:hover {
+    color: var(--primary);
     font-weight: 700;
+}
+
+.fields-tab>.p-active {
+    font-weight: 700;
+    color: var(--primary);
+    text-align: start;
+}
+
+.fields-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 60px;
+    width: calc(100% - 33% + 60px);
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.20);
+    background-color: var(--secondary-4);
+}
+
+.fields-ctn>.overlay-heading>p {
+    color: var(--secondary-1);
+}
+
+.fields-ctn>.overlay-heading>h3 {
+    color: var(--primary);
 }

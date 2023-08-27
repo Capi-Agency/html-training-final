@@ -68,7 +68,7 @@ h2 {
 h3 {
     font-size: var(--font-title-1);
     color: var(--primary);
-    text-align: center;
+    text-align: initial;
 
     font-style: normal;
     font-weight: 600;
@@ -451,6 +451,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
+    gap: 80px;
 
     position: sticky;
 
@@ -598,8 +599,8 @@ main {
 .banner-body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 0 375px;
+    width: 60%;
+    margin: 0 auto;
     gap: 24px;
     align-items: center;
     text-align: center;
