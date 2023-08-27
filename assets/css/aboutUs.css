@@ -1,0 +1,58 @@
+/* Letter */
+.letter-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    gap: 80px;
+}
+
+.letter-container img {
+    width: 33%;
+    object-fit: cover;
+    padding: 0 0;
+}
+
+.letter-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100% - 33% - 80px);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.letter-layout-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.letter-layout>h6 {
+    text-align: start;
+}
+
+.letter-layout-heading>h2 {
+    text-align: start;
+}
+
+.letter-layout-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.letter-layout-content>h6 {
+    text-align: start;
+}
+
+.letter-layout-content>h6>span {
+    color: var(--primary);
+    font-size: var(--font-body-1);
+    font-weight: 700;
+}

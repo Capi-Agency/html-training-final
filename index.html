@@ -14,20 +14,21 @@
     <!--  End::Global style  -->
 
     <!--  Start::Custom style  -->
-    <!--  Enter your css link here and remove this comment  -->
+    <link rel="stylesheet" href="./assets/css/index.css">
     <!--  End::Custom style  -->
 
     <title>Homepage</title>
 </head>
 
 <body>
+
     <header>
         <div class="header-logo">
             <img src="assets/images/logo-header.png" alt="just-a-logo">
         </div>
         <div class="header-tabbar">
-            <a class="btn-nav_active" href="">Trang chủ</a>
-            <a class="btn-nav" href="">Giới thiệu</a>
+            <a class="btn-nav_active" href="index.html">Trang chủ</a>
+            <a class="btn-nav" href="aboutUs.html">Giới thiệu</a>
             <a class="btn-nav" href="">Dự án</a>
             <a class="btn-nav" href="">Dịch vụ</a>
             <a class="btn-nav" href="">Các sản phẩm</a>
@@ -37,172 +38,188 @@
         </div>
     </header>
     <main>
-        <!-- <h1>Hello World</h1>
-        <h2>Hello World</h2>
-        <h3>Hello World</h3>
-        <h4>Hello World</h4>
-        <h5>Hello World</h5>
-        <h6>Hello World</h6>
-        <p>Hello World</p>
-        <a href="">Hello World</a> -->
 
         <!-- Banner -->
         <section class="main-banner">
-            <img src="assets/images/banner_1.png" alt="">
+            <!-- <img src="assets/images/banner-aboutUs.png" alt=""> -->
             <div class="banner-body">
                 <div class="banner-body_content">
                     <p>NHỮNG DỰ ÁN TIÊU BIỂU CỦA CHÚNG TÔI</p>
                     <h1>Dự án Tiêu âm hội trường sân khấu</h1>
                 </div>
-                <div class="btn">
-                    <a href="">Xem thêm</a>
-                </div>
             </div>
+            <div class="banner-body_subContent">
+                <img src="assets/images/vuesax-linear-arrow-down.svg" alt="">
+                <h6>Cuộn xuống để xem thêm</h6>
+            </div>
+            <div class="btn-primary">XEM DỰ ÁN</div>
         </section>
 
         <!-- Numbers -->
-        <section class="main-numbers">
-            <div class="numbers-col1">
-                <div class="numbers-col1_item">
-                    <h1>157</h1>
-                    <p>Dự án</p>
+        <section class="ctn">
+            <div class="numbers-container">
+                <div class="numbers-col1">
+                    <div class="numbers-col1_item">
+                        <h1>157</h1>
+                        <p>Dự án</p>
+                    </div>
+                    <div class="numbers-col1_item">
+                        <h1>157</h1>
+                        <p>Dự án</p>
+                    </div>
+                    <div class="numbers-col1_item">
+                        <h1>157</h1>
+                        <p>Dự án</p>
+                    </div>
+                    <div class="numbers-col1_item">
+                        <h1>157</h1>
+                        <p>Dự án</p>
+                    </div>
                 </div>
-                <div class="numbers-col1_item">
-                    <h1>157</h1>
-                    <p>Dự án</p>
+                <div class="numbers-col2">
+                    <div class="numbers-col2_title">
+                        <p>NHỮNG CON SỐ</p>
+                        <h2>Tâm huyết mang đến những con số</h2>
+                    </div>
+                    <div>
+                        <h6>Nhóm của chúng tôi đảm nhận mọi thứ, từ phát triển ý tưởng và khái niệm đến hiện thực hóa.
+                            Chúng
+                            tôi tin tưởng vào
+                            truyền thống và kết hợp chúng trong những đổi mới của chúng tôi. Tất cả các dự án của chúng
+                            tôi
+                            kết hợp một hình ảnh
+                            nghệ thuật độc đáo và các giải pháp chức năng. Khách hàng là linh hồn của dự án. Mục tiêu
+                            chính
+                            của chúng tôi là minh họa các giá trị và cá tính của họ.</h6>
+                    </div>
                 </div>
-                <div class="numbers-col1_item">
-                    <h1>157</h1>
-                    <p>Dự án</p>
-                </div>
-                <div class="numbers-col1_item">
-                    <h1>157</h1>
-                    <p>Dự án</p>
-                </div>
-            </div>
-            <div class="numbers-col2">
-                <div class="numbers-col2_title">
-                    <p>NHỮNG CON SỐ</p>
-                    <h2>Tâm huyết mang đến những con số</h2>
-                </div>
-                <div>
-                    <h6>Nhóm của chúng tôi đảm nhận mọi thứ, từ phát triển ý tưởng và khái niệm đến hiện thực hóa. Chúng
-                        tôi tin tưởng vào
-                        truyền thống và kết hợp chúng trong những đổi mới của chúng tôi. Tất cả các dự án của chúng tôi
-                        kết hợp một hình ảnh
-                        nghệ thuật độc đáo và các giải pháp chức năng. Khách hàng là linh hồn của dự án. Mục tiêu chính
-                        của chúng tôi là minh họa các giá trị và cá tính của họ.</h6>
-                </div>
+
             </div>
         </section>
 
         <!-- Projects -->
-        <section class="main-projects">
-            <div class="projects-heading">
-                <p>CÁC DỰ ÁN TIÊU BIỂU</p>
-                <h2>Thực hiện với niềm đam mê</h2>
+        <section class="ctn">
+            <div class="card-ctn">
+                <!-- Heading component -->
+                <div class="overlay-heading">
+                    <p>CÁC DỰ ÁN TIÊU BIỂU</p>
+                    <h3>Thực hiện với niềm đam mê</h3>
+                </div>
+
+                <!-- Card-grid component -->
+                <div class="card-grid">
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="card-grid_item">
+                        <img src="assets/images/number_thumb.png" alt="">
+                        <div class="card-grid_item__content">
+                            <h4>Văn phòng tập đoàn FPT</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button Component -->
+                <div class="btn-primary">XEM DỰ ÁN</div>
+
+
             </div>
-            <div class="projects-grid">
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-                <div class="projects-grid_item">
-                    <img src="assets/images/number_thumb.png" alt="">
-                    <div class="projects-grid_item__content">
-                        <h4>Văn phòng tập đoàn FPT</h4>
-                        <span>Hà Nội</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-btn">
-                <a href="">Xem thêm</a>
-            </div>
+
         </section>
 
         <!-- Services -->
-        <section class="main-services">
-            <img src="assets/images/banner_2.png" alt="">
-            <div class="services-container">
-                <div class="services-heading">
+        <section class="overlay-ctn">
+            <img src="assets/images/overlay-img.png" alt="">
+            <div class="overlay-layout">
+                <!-- Heading component -->
+                <div class="overlay-heading">
                     <p>DỊCH VỤ</p>
                     <h3>Chúng tôi cung cấp những gì</h3>
                 </div>
-                <div class="services-layout">
-                    <div class="services-layout_item">
+
+                <!-- Overlay-content -->
+                <div class="overlay-body">
+                    <!-- Item -->
+                    <div class="overlay-body_item">
                         <img src="assets/images/consultant-services-1.svg" alt="">
-                        <div class="services-layout_item__content">
+                        <div class="overlay-body_content">
                             <h3>Tư vấn thiết kế</h3>
                             <h6>Chia sẻ về kiến thức, tư vấn thấu hiểu mong muốn của khách hàng, từ đó nghiên cứu, rồi
                                 đưa ra các giải pháp tối ưu nhất
                                 ...</h6>
                         </div>
                     </div>
-                    <div class="services-layout_item">
-                        <img src="assets/images/construction-plan-1.svg" alt="">
-                        <div class="services-layout_item__content">
-                            <h3>Thi công</h3>
+
+                    <!-- Item -->
+                    <div class="overlay-body_item">
+                        <img src="assets/images/consultant-services-1.svg" alt="">
+                        <div class="overlay-body_content">
+                            <h3>Tư vấn thiết kế</h3>
                             <h6>Chia sẻ về kiến thức, tư vấn thấu hiểu mong muốn của khách hàng, từ đó nghiên cứu, rồi
                                 đưa ra các giải pháp tối ưu nhất
                                 ...</h6>
                         </div>
                     </div>
-                    <div class="services-layout_item">
-                        <img src="assets/images/idea-1.svg" alt="">
-                        <div class="services-layout_item__content">
-                            <h3>Giải pháp tiêu âm</h3>
+
+                    <!-- Item -->
+                    <div class="overlay-body_item">
+                        <img src="assets/images/consultant-services-1.svg" alt="">
+                        <div class="overlay-body_content">
+                            <h3>Tư vấn thiết kế</h3>
                             <h6>Chia sẻ về kiến thức, tư vấn thấu hiểu mong muốn của khách hàng, từ đó nghiên cứu, rồi
                                 đưa ra các giải pháp tối ưu nhất
                                 ...</h6>
@@ -213,24 +230,34 @@
         </section>
 
         <!-- Partners -->
-        <section class="main-partners">
+        <section class="overlay-ctn">
             <img src="assets/images/banner_2.png" alt="">
-            <div class="partners-container">
-                <div class="partners-heading">
+            <div class="overlay-layout">
+                <!-- Heading component -->
+                <div class="overlay-heading">
                     <p>ĐỐI TÁC</p>
                     <h3>Chúng tôi đã làm việc với những đối tác tuyệt vời.</h3>
                 </div>
-                <div class="partners-layout">
-                    <div class="partners-layout_item">
+
+                <!-- Overlay-content -->
+                <div class="overlay-body">
+                    <!-- Item -->
+                    <div class="overlay-body_item">
                         <img src="assets/images/clients-1-png.png" alt="">
                     </div>
-                    <div class="partners-layout_item">
+
+                    <!-- Item -->
+                    <div class="overlay-body_item">
                         <img src="assets/images/clients-5-png.png" alt="">
                     </div>
-                    <div class="partners-layout_item">
+
+                    <!-- Item -->
+                    <div class="overlay-body_item">
                         <img src="assets/images/clients-7-png.png" alt="">
                     </div>
-                    <div class="partners-layout_item">
+
+                    <!-- Item -->
+                    <div class="overlay-body_item">
                         <img src="assets/images/clients-8-png.png" alt="">
                     </div>
                 </div>
@@ -238,12 +265,15 @@
         </section>
 
         <!-- News  -->
-        <section class="main-news">
-            <div class="news-container">
-                <div class="news-heading">
-                    <p>THỜI GIAN</p>
-                    <h3>Tin tức và sự kiện</h3>
+        <section class="ctn">
+            <div class="news-ctn">
+                <!-- Heading component -->
+                <div class="overlay-heading">
+                    <p>ĐỐI TÁC</p>
+                    <h3>Chúng tôi đã làm việc với những đối tác tuyệt vời.</h3>
                 </div>
+
+                <!-- news-ly -->
                 <div class="news-layout">
                     <div class="news-item">
                         <img src="assets/images/post-1.png" alt="">
@@ -315,56 +345,61 @@
                 </div>
                 <div class="btn-primary">Đọc tiếp</div>
             </div>
-
         </section>
 
-        <!-- Contact -->
-        <section class="main-contact">
-            <div class="contact-heading">
-                <div class="contact-heading_content">
-                    <div class="contact-heading_content-title">
-                        <p>LIÊN HỆ</p>
-                        <h2>Cùng bắt đầu một dự án mới!</h2>
+        <!-- Contact Component -->
+        <section class="ctn">
+            <div class="contact-ctn">
+                <div class="contact-hd">
+                    <div class="contact-hd_title">
+                        <!-- Heading component -->
+                        <div class="overlay-heading">
+                            <p>ĐỐI TÁC</p>
+                            <h3>Chúng tôi đã làm việc với những đối tác tuyệt vời.</h3>
+                        </div>
+                        <h6>Giờ đây, khi bạn đã hình dung được chúng tôi là ai, hãy liên hệ với chúng tôi và đặt nền
+                            móng
+                            cho một mối quan hệ mới và
+                            thành công. Đội ngũ của chúng tôi sẽ luôn đồng hành và đặt tâm huyết của mình đến mỗi dự án
+                            thực
+                            hiện</h6>
                     </div>
-                    <h6>Giờ đây, khi bạn đã hình dung được chúng tôi là ai, hãy liên hệ với chúng tôi và đặt nền móng
-                        cho một mối quan hệ mới và
-                        thành công. Đội ngũ của chúng tôi sẽ luôn đồng hành và đặt tâm huyết của mình đến mỗi dự án thực
-                        hiện</h6>
-                </div>
-                <div class="contact-heading_content__detail">
-                    <div class="heading_content__detail-item">
-                        <div class="divider"></div>
-                        <div class="detail-content">
-                            <span>SỐ ĐIỆN THOẠI</span>
-                            <h6>0911516688</h6>
+                    <div class="contact-hd_content">
+                        <div class="contact-hd_content-item">
+                            <div class="divider"></div>
+                            <div class="detail-content">
+                                <span>SỐ ĐIỆN THOẠI</span>
+                                <h6>0911516688</h6>
+                            </div>
+                        </div>
+                        <div class="contact-hd_content-item">
+                            <div class="divider"></div>
+                            <div class="detail-content">
+                                <span>EMAIL</span>
+                                <h6>purchasinggmi@gmail.com</h6>
+                            </div>
                         </div>
                     </div>
-                    <div class="heading_content__detail-item">
-                        <div class="divider"></div>
-                        <div class="detail-content">
-                            <span>EMAIL</span>
-                            <h6>purchasinggmi@gmail.com</h6>
-                        </div>
-                    </div>
+
                 </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-row1">
+                            <input type="text" id="name-form" placeholder="Tên">
+                            <input type="text" id="num-form" placeholder="Số điện thoại">
+                        </div>
+                        <input type="text" id="email-form" placeholder="example@mail.com">
+                        <textarea name="message" id="textarea-form" cols="30" rows="10" placeholder=""></textarea>
 
-            </div>
-            <div class="contact-form">
-                <form>
-                    <div class="form-row1">
-                        <input type="text" id="name-form" placeholder="Tên">
-                        <input type="text" id="num-form" placeholder="Số điện thoại">
+                    </form>
+                    <div class="form-row2">
+                        <button class="btn-contact" type="button">Gửi ngay</button>
+                        <img src="assets/images/vuesax-linear-arrow-right.svg" alt="">
                     </div>
-                    <input type="text" id="email-form" placeholder="example@mail.com">
-                    <textarea name="message" id="textarea-form" cols="30" rows="10" placeholder=""></textarea>
-
-                </form>
-                <div class="form-row2">
-                    <button class="btn-contact" type="button">Gửi ngay</button>
-                    <img src="assets/images/vuesax-linear-arrow-right.svg" alt="">
                 </div>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="footer-container">
