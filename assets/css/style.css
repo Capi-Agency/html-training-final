@@ -6,7 +6,7 @@
 
 h1 {
     color: #111;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -17,7 +17,7 @@ h1 {
 
 h2 {
     color: #111;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -28,7 +28,7 @@ h2 {
 
 h3 {
     color: #7E7D7D;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@ h3 {
 h4 {
     color: #111;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -50,7 +50,7 @@ h4 {
 h5 {
     color: #111;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -61,7 +61,7 @@ h5 {
 h6 {
     color: #111;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 33px;
     font-style: normal;
     font-weight: 700;
@@ -74,7 +74,7 @@ p {
     overflow: hidden;
     color: #111;
     text-overflow: ellipsis;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -89,7 +89,7 @@ p {
     border: 1px solid #111;
     color: #111;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -145,7 +145,7 @@ p {
 .banner-content h2 {
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -157,7 +157,7 @@ p {
 .banner-content h1 {
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 54px;
     font-style: normal;
     font-weight: 700;
@@ -250,9 +250,9 @@ a {
 
 .project-list {
     display: flex;
-    width: 1170px;
+    width: 100%;
     align-items: flex-start;
-    gap: 32px;
+    gap: 28px;
 }
 
 .section3 {
@@ -415,12 +415,12 @@ a {
 
 .post-list h2 {
     color: #7E7D7D;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 171.429% */
+   
 }
 
 .post-list h3 {
@@ -429,24 +429,24 @@ a {
     color: #7E7D7D;
     text-overflow: ellipsis;
     white-space: wrap;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
 }
 
 .post-list h5 {
     color: #111;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
-    /* 200% */
+    line-height: 24px; 
     letter-spacing: 1.32px;
     text-transform: uppercase;
+    border-bottom: 2px solid #49BEFF;
+    
 }
 
 .section5 p {
