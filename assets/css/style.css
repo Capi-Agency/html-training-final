@@ -79,7 +79,7 @@ h4 {
     font-size: var(--font-body-3);
     color: var(--primary);
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 32px;
 }
 
@@ -484,7 +484,7 @@ button {
 .btn-dropdown {
     display: flex;
     padding: 12px 12px 12px 4px;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     width: 100%;
 }
@@ -498,7 +498,7 @@ button {
     text-align: start;
     display: flex;
     padding: 12px 12px 12px 4px;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     border-radius: 6px;
     width: 100%;
@@ -517,7 +517,7 @@ button {
 .btn-tab {
     display: flex;
     padding: 12px 8px 8px 44px;
-    align-items: flex-start;
+    align-items: center;
     gap: 4px;
     border-radius: 6px;
     width: 100%;
@@ -721,4 +721,80 @@ main {
 
 .banner-body_content>p {
     color: var(--secondary-4);
+}
+
+/* fields */
+
+.fields-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 60px;
+
+    padding: 40px 0;
+}
+
+.fields-layout {
+    display: flex;
+    gap: 60px;
+}
+
+.fields-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    width: 33%;
+
+    border: 1px solid #CCC;
+    position: relative;
+}
+
+.fields-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 200px;
+    padding: 0 24px 24px 0;
+
+    position: absolute;
+    top: -4%;
+    left: -4%;
+
+    background-color: var(--secondary-4);
+}
+
+.fields-tab>p {
+    color: var(--secondary-2);
+}
+
+.fields-tab>p {
+    text-align: start;
+}
+
+.fields-tab>p:hover {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.fields-tab>.p-active {
+    font-weight: 700;
+    color: var(--primary);
+    text-align: start;
+}
+
+.fields-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 60px;
+    width: calc(100% - 33% + 60px);
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.20);
+    background-color: var(--secondary-4);
 }
