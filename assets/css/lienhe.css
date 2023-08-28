@@ -1,0 +1,17 @@
+.frame-location{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 66px;
+}
+
+.frame-dd-img{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.background-img{
+    background-color: #F2F2F2;
+    
+}
