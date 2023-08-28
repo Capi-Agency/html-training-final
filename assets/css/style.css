@@ -30,6 +30,7 @@
     --font-body-2: 18px;
     --font-body-3: 20px;
     --font-title-1: 24px;
+    --font-largeTitle-1: 28px;
     --font-title-2: 40px;
     --font-banner: 54px;
 }
@@ -44,7 +45,8 @@ h6,
 p,
 a,
 span,
-.caption-small {
+.caption-small,
+.largeTitle-1 {
     font-family: "Roboto", var(--font-family);
 }
 
@@ -132,6 +134,14 @@ span {
     line-height: 16px;
 }
 
+.largeTitle-1 {
+    font-size: var(--font-largeTitle-1);
+    color: var(--secondary-0);
+    text-align: initial;
+    font-weight: 600;
+    line-height: 40px;
+}
+
 /* === CSS Component Styled ===*/
 
 /* Container */
@@ -181,7 +191,9 @@ span {
 
 }
 
-.overlay-heading {
+/* Overlay heading (light mode) */
+
+.overlay-heading-light {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -189,6 +201,33 @@ span {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.overlay-heading-light>h3 {
+    color: var(--primary);
+    text-align: start;
+}
+
+/* Overlay heading (dark mode) */
+
+.overlay-heading-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.overlay-heading-dark>p {
+    color: var(--secondary-3);
+}
+
+.overlay-heading-dark>h3 {
+    color: var(--secondary-4);
+    text-align: start;
+}
+
+/* === */
 
 .overlay-body {
     display: flex;
@@ -438,6 +477,54 @@ button {
     background-color: var(--link);
     color: var(--secondary-4);
     border: none;
+}
+
+/* btn-dropdown */
+
+.btn-dropdown {
+    display: flex;
+    padding: 12px 12px 12px 4px;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.btn-dropdown>h4 {
+    text-align: start;
+
+}
+
+.btn-dropdown-active {
+    text-align: start;
+    display: flex;
+    padding: 12px 12px 12px 4px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 6px;
+    width: 100%;
+    background: var(--secondary-3);
+}
+
+.btn-dropdown-active>h4 {
+    text-align: start;
+    color: var(--secondary-0);
+    font-weight: 600;
+    line-height: 28px;
+}
+
+/* btn-tab */
+
+.btn-tab {
+    display: flex;
+    padding: 12px 8px 8px 44px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.btn-tab:hover {
+    background-color: var(--secondary-3);
 }
 
 /* Header */

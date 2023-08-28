@@ -22,10 +22,6 @@
     align-items: flex-start;
 }
 
-.letter-layout>.overlay-heading>p3 {
-    text-align: start;
-}
-
 .letter-layout>h6 {
     text-align: start;
 }
@@ -72,14 +68,6 @@
         1px 1px 0 var(--primary);
 }
 
-.overlay-heading>p {
-    color: var(--secondary-3);
-}
-
-.overlay-heading>h3 {
-    color: var(--secondary-4);
-}
-
 /* exporters */
 
 .exporters-ctn {
@@ -118,14 +106,6 @@
 
     padding-right: 8px;
     border-right: 1px solid var(--secondary-2);
-}
-
-.exporters-ctn>.overlay-heading>p {
-    color: var(--secondary-1);
-}
-
-.exporters-ctn>.overlay-heading>h3 {
-    color: var(--primary);
 }
 
 /* fields */
