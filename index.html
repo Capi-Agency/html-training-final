@@ -26,24 +26,31 @@
             <div class="logo">
                 <img src="./public/images/image-3.png" alt="">
             </div>
-            <div>
-                <div class="menu">
-                    <a class="item" href="">trang chủ</a>
-                    <a>giới thiệu</a>
-                    <a>dự án</a>
-                    <a>dịch vụ</a>
-                    <a>các sản phẩm</a>
-                    <a>tin tức và sự kiện</a>
-                    <a>blog</a>
-                    <a>liên hệ</a>
-                </div>
+            <div class="menu">
+                <ul>
+                  <li> <a class="button-home" href="">trang chủ</a></li>
+                  <li> <a class="button" href="">giới thiệu</a></li>
+                  <li> <a class="button" href="">dịch vụ</a></li>
+                  <li> <a class="button" href="">các sản phẩm</a></li>
+                  <li> <a class="button" href="">tin tức và sự kiện</a></li>
+                  <li> <a class="button" href="">blog</a></li>
+                  <li> <a class="button" href="">liên hệ</a></li>
+                </ul>
             </div>
+            
         </div>
     </header>
     <main>
-        <div class="banner">
-            <img src="./public/images/span1.png" alt="">
-        </div>
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="banner-content">
+                <h2>NHỮNG DỰ ÁN TIÊU BIỂU CỦA CHÚNG TÔI</h2>
+                <h1>Dự án Tiêu âm hội trường sân khấu </h1>
+                <input type="submit" class="button-next-banner" value="XEM DỰ ÁN">
+            </div>
+
+        </section>
+       <!-- SECTION1 -->
         <div class="section1">
             <div>
                 <img src="./public/images/Card.png" alt="">
@@ -58,6 +65,7 @@
                     của họ.</h3>
             </div>
         </div>
+        <!-- SECTION2 -->
         <div class="section2">
             <div class="title">
                 <h2>CÁC DỰ ÁN TIÊU BIỂU</h2>
@@ -117,6 +125,7 @@
                 </div>
             </div>
         </div>
+        <!-- SECTION3 -->
         <div class="section3">
             <div class="section3-banner">
                 <img src="./public/images/banner02.png" alt="">
@@ -132,21 +141,21 @@
                             <h6>Thi công</h6>
                             <h3>Sản xuất, phân phối các sản phẩm tiêu âm, sản phẩm trang trí nhập khẩu với nhiều loại
                                 ...</h3>
-                            <img src="./public/images/button2.png" alt="">
+                            <input type="submit" class="button-next" value="XEM THÊM">
                         </div>
                         <div class="service-list-item">
                             <img src="./public/images/idea-1.svg" alt="">
                             <h6>Thi công</h6>
                             <h3>Sản xuất, phân phối các sản phẩm tiêu âm, sản phẩm trang trí nhập khẩu với nhiều loại
                                 ...</h3>
-                            <img src="./public/images/button2.png" alt="">
+                            <input type="submit" class="button-next" value="XEM THÊM">
                         </div>
                         <div class="service-list-item">
                             <img src="./public/images/construction-plan-1.svg" alt="">
                             <h6>Giải pháp tiêu âm</h6>
                             <h3>Xây dựng các công trình, kiến trúc mang tính đột phá và toàn diện nhất, mang đến những
                                 không gian ...</h3>
-                            <img src="./public/images/button2.png" alt="">
+                            <input type="submit" class="button-next" value="XEM THÊM">
                         </div>
 
                     </div>
@@ -155,6 +164,7 @@
             </div>
 
         </div>
+        <!-- SECTION4 -->
         <div class="section4">
                 <img src="./public/images/banner02.png" alt="">
             <div class="partner">
@@ -170,6 +180,7 @@
                 </div>
             </div>
         </div>
+        <!-- SECTION5 -->
         <div class="section5">
             <div class="section5-title">
                 <h2>THỜI GIAN</h2>
@@ -215,10 +226,11 @@
 
             </div>
             <div class="post-button">
-                <img src="./public/images/button2.png" alt="">
-
+               
+                <input type="submit" class="button-next" value="XEM THÊM">
             </div>
         </div>
+        <!-- SECTION6 -->
         <div class="section6">
             <div class="info">
                 <div class="info1">
@@ -228,38 +240,61 @@
                         cho một mối quan hệ mới và thành công. Đội ngũ của chúng tôi sẽ luôn đồng hành và đặt tâm huyết
                         của mình đến mỗi dự án thực hiện </h3>
                 </div>
+              
                 <div class="info2">
-                    <div>
+                    <div class="info-phone">
                         <h5>SỐ ĐIỆN THOẠI</h5>
                         <h3>0911516688</h3>
                     </div>
-                    <div>
+                    <div class="info-email">
                         <h5>EMAIL</h5>
                         <h3>purchasinggmi@gmail.com</h3>
                     </div>
                 </div>
             </div>
+          
             <div class="input">
-                <div class="item">
-                    <img src="./public/images/input-field-tgfdg.png" alt="">
-                    <img src="./public/images/input-field-4-bs-9-q.png" alt="">
+                <form action="">
+                    <div class="row1">
+                        <div class="col col-half">
+                            <input type="text" name="" placeholder="TÊN" required class="form-control">
+                        </div>
+                        <div class="col col-half">
+                            <input type="phone" name="" placeholder="SỐ ĐIỆN THOẠI" required class="form-control">
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="col col-full">
+                            <input type="text" name="" placeholder="example@mail.com" required class="form-control2">
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="col col-full">
+                            <input type="text" name="" required class="form-control3">
+                        </div>
+                    </div>
+                    <div class="input-button">
+                    <input type="submit" class="row-button" value="GỬI NGAY">
+                    <img src="./public/images/vuesax-linear-arrow-right.svg" alt="">
                 </div>
-                <img src="./public/images/input.png" alt="">
-                <img src="./public/images/input2.png" alt="">
+                </form>
             </div>
         </div>
     </main>
+    <!-- SECTION7 -->
     <footer>
         <div class="section7">
             <img src="./public/images/Footer.png" alt="">
-        </div>
+        
             <div class="footer">
-                <div class="footer-item">
+               
                     <div class="footer-item-list">
                         <img src="./public/images/footer2.png" alt="">
+                        <div>
                         <h5>Nguyên tắc công ty của chúng tôi là quan niệm tập thể. Ngay từ đầu, thực hành đã tin vào
                             những đức tính , trao đổi ý kiến, nỗ lực chung, chia sẻ kiến ​​thức và nhiệt tình trong quá
                             trình làm việc.</h5>
+                        </div>
                     </div>
                     <div class="footer-item-list2">
                         <h2>LIÊN HỆ</h2>
@@ -269,14 +304,16 @@
                         <h5>LK19 - L8, Khu Đấu Giá QSD Đất Mậu Lương, Phường Kiến Hưng, Quận Hà Đông, Thành phố Hà Nội,
                             Việt Nam</h5>
                     </div>
-                </div>
-                <!-- <div class="footer-item2"> 
-                <h5>© 2020 CafeLink. All rights reserved. Privacy Policy</h5>
-                <img src="./public/images/facebook-svg.svg" alt="">
-                <img src="./public/images/zalo-seeklogo-com-1.svg" alt="">
-            </div> -->
+                
             </div>
-        
+            <div class="footer-logo">
+                <div>
+                <h5>© 2020 CafeLink. All rights reserved. Privacy Policy</h5></div>
+                <div class="footer-social"> 
+                <img src="./public/images/facebook-svg.svg" alt="">
+                <img src="./public/images/zalo-seeklogo-com-1.svg" alt=""></div>
+            </div>
+        </div>
     </footer>
 
     <!--  Start::Global JS  -->
