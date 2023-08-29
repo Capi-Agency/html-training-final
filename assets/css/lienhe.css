@@ -1,4 +1,5 @@
 .frame-location{
+    width: 1170px;
     display: flex;
     flex-direction: column;
     align-self: center;

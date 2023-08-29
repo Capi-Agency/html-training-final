@@ -90,6 +90,7 @@
 }
 
 .frame3{
+    width: 1170px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -122,6 +123,7 @@
 }
 
 .frame4{
+    width: 1170px;
     display: flex;
     flex-direction: column;
     align-self: center;
