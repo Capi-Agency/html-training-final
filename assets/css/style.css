@@ -500,10 +500,6 @@ a {
     padding-top: 36px;
 }
 
-
-
-.input {}
-
 .row1 {
     display: flex;
     justify-content: space-between;
@@ -565,7 +561,7 @@ a {
 
 }
 
-
+/* footer */
 .section7 {
     width: 1920px;
     height: 573px;
