@@ -1,0 +1,31 @@
+
+
+.blog-title{
+    margin-top: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 88px;
+}
+
+.blog-content-reverse{
+    display: flex;
+    flex-direction: row-reverse ;
+    justify-content: flex-end;
+    gap: 88px;
+}
+
+.blog-text{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
