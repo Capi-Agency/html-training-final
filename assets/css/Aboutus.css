@@ -356,6 +356,7 @@ a {
     align-items: flex-start;
     gap: 60px;
     padding: 120px 375px 120px 375px;
+   
 }
 
 .section5-title {
@@ -370,18 +371,15 @@ a {
     width: 1170px;
     align-items: flex-end;
     gap: 40px;
-    width: 900.906px;
+  
   
 }
 
 .section5-product2 {
-    display: flex;
-width: 900.906px;
-height: 304px;
-padding: 80px 130.906px 79px 130px;
-justify-content: center;
-align-items: center;
+    width: 640px;
+height: 145px;
 flex-shrink: 0;
+margin-bottom: 80px;
 }
 
 .section5-product1 {
@@ -391,8 +389,11 @@ flex-shrink: 0;
     border: 1px solid #000;
 }
 .section5-product-list {
-    padding-left: 375px;
-
+    margin-left: 375px;
+   position: relative;
+   bottom: 450px;
+   background: #FFF;
+   width: 334px;
 }
 
 /* footer */
