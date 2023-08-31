@@ -7,25 +7,9 @@
 }
 
 /* Services */
-.overlay-body_item {
-    aspect-ratio: auto 1 / 1;
-
-}
 .overlay-body_item>img {
     width: 100%;
     object-fit: contain;
-}
-
-/* News */
-
-.overlay-heading {
-    & p {
-        color: var(--secondary-1);
-    }
-
-    & h3 {
-        color: var(--primary);
-    }
 }
 
 /* Numbers */
@@ -44,10 +28,14 @@
     background-size: cover;
     width: 100%;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     padding: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .numbers-col2 {
@@ -79,7 +67,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 50%;
+    width: 100%;
     padding: 16px;
     align-items: center;
     justify-content: center;
@@ -390,4 +378,90 @@ h3 {
     flex-direction: column;
     height: 100%;
     gap: 36px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1440px) {
+    .numbers-container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+        .numbers-col2 {
+            gap: 16px;
+            
+            h6 {
+                text-align: center;
+            }
+
+            .overlay-heading-light {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .numbers-col1 {
+            .numbers-col1_item {
+                padding: 8px;
+            }
+        }
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    /* .container {
+        max-width: 640px;
+    } */
+}
+
+/* sm */
+@media (max-width: 640px) {
+    /* .container {
+        max-width: 475px;
+    } */
+}
+
+/* xs */
+@media (max-width: 520px) {
+    /* .container {
+        width: 100%;
+    } */
+
+    .banner-body_subContent {
+        display: none;
+    }
+
+
+    /* Number */
+
+    .numbers-col2 {
+        gap: 16px;
+        padding: 0;
+
+        h6 {
+            font-size: var(--font-small);
+            line-height: 24px;
+        }
+    }
+
+    .numbers-col1_item {
+        height: fit-content, auto;
+        h1 {
+            font-size: var(--font-title-2);
+        }
+    }
+
+    .overlay-ctn {
+        .overlay-body {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+        }
+    }
+
+
+
 }
