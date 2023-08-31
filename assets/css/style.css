@@ -214,7 +214,30 @@ a {
     gap: 130px;
     width: 1170px;
     height: 390px;
-    padding: 120px 385px 120px 385px;
+    padding: 120px 375px 120px 375px;
+}
+
+.section1-banner {
+    width: 570px;
+    height: 390px;
+    background-image: url(../images/Card103.png);
+}
+
+.number{
+    display: inline-flex;
+    flex-direction: column;
+    width: 275px;
+    height: 185px;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.number-item{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content {
@@ -222,8 +245,24 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-
+    width: 460px;
+    height: 160px;
 }
+
+.number h1{
+    font-family: 'Roboto';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: 0.9px;
+}
+
+
+
+
+
+
 
 .section2 {
     padding: 0px 375px 120px 375px;
@@ -420,7 +459,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-   
+
 }
 
 .post-list h3 {
@@ -442,11 +481,11 @@ a {
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 1.32px;
     text-transform: uppercase;
     border-bottom: 2px solid #49BEFF;
-    
+
 }
 
 .section5 p {
@@ -505,6 +544,7 @@ a {
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .row2,
 .row3 {
     margin-bottom: 40px;
