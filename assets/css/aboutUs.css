@@ -269,19 +269,4 @@
             }
         }
     }
-
-    /* fields */
-    .ctn {
-        .fields-ctn {
-            padding: 0;
-
-            .fields-layout
-             {
-
-                .fields-nav {
-
-                }
-            }
-        }
-    }
 }
