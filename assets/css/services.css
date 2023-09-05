@@ -5,32 +5,135 @@
     gap: 240px;
     justify-content: center;
     align-items: center;
-}
 
-.intro-ctn > img {
-    width: 280px;
-    height: 280px;
-    border-radius: 1000px;
-}
+    img {
+        width: 280px;
+        height: 280px;
+        border-radius: 1000px;
+    }
 
-.intro-layout {
-    width: calc(100% - 280px + 240px);
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
+    .intro-layout {
+        width: calc(100% - 280px + 240px);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
 
-.intro-layout > h6 {
-    text-align: start;
+        h6 {
+            text-align: start;
+        }
+    }
 }
-
 
 /* Testimoni */
 
-.fields-slogan > img {
+.fields-slogan>img {
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
 
+/* Responsive */
 
+@media (max-width: 1440px) {
+    .intro-ctn {
+        width: 60%;
+        margin: 100px auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .intro-layout {
+            width: calc(100% - 280px + 240px);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            h6 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1132px) {
+
+    .intro-ctn {
+        width: 60%;
+        margin: 80px auto;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 80px;
+
+        img {
+            width: 240px;
+            height: 240px;
+            border-radius: 1000px;
+        }
+
+        .intro-layout {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            h6 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-ctn {
+        margin: 60px auto;
+        flex-wrap: wrap;
+
+        gap: 40px;
+
+        img {
+            width: 100%;
+        }
+
+        .intro-layout {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .intro-ctn {
+        margin: 40px auto;
+        flex-wrap: wrap;
+
+        gap: 32px;
+
+        img {
+            width: 100%;
+        }
+
+        .intro-layout {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .intro-ctn {
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        gap: 32px;
+        height: fit-content;
+
+        img {
+            display: none;
+        }
+
+        .intro-layout {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
