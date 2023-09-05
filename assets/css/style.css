@@ -361,6 +361,13 @@ a {
     color: #FFF;
 }
 
+.section3{
+    width: 1920px;
+height: 586px;
+flex-shrink: 0;
+}
+
+
 .section3-banner {
     position: relative;
     z-index: 0;
