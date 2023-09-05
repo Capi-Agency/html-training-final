@@ -229,17 +229,6 @@ h3 {
 
 /* News */
 
-.main-news {
-    width: 100%;
-    height: auto;
-    padding: 48px 375px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
 .news-ctn {
     width: 60%;
     display: flex;
@@ -389,8 +378,9 @@ h3 {
         flex-wrap: wrap;
 
         .numbers-col2 {
+            padding: 0;
             gap: 16px;
-            
+
             h6 {
                 text-align: center;
             }
@@ -408,27 +398,92 @@ h3 {
             }
         }
     }
+
+    /* News */
+    .news-ctn {
+        gap: 40px;
+    }
+
+    .news-layout {
+        gap: 28px;
+        .news-item {
+            .news-title {
+                h3 {
+                    font-size: var(--font-body-1);
+                    line-height: calc(var(--font-body-1) * 1.6);
+                }
+
+                p {
+                    font-size: var(--font-small-0);
+                    line-height: calc(var(--font-small-0) * 1.6);
+                }
+                h6 {
+                    font-size: var(--font-small);
+                    line-height: calc(var(--font-small) * 1.6);
+                }
+            }
+        }
+    }
 }
 
-/* md */
+@media (max-width: 1132px) {
+
+    /* Numbers */
+    .numbers-container {
+
+        .numbers-col1 {
+            height: 320px;
+
+            .numbers-col1_item {
+                padding: 8px;
+            }
+        }
+    }
+
+    /* News */
+    .news-layout {
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
 @media (max-width: 768px) {
-    /* .container {
-        max-width: 640px;
-    } */
+
+    /* Numbers */
+    .numbers-container {
+
+        .numbers-col1 {
+            height: 296px;
+
+            .numbers-col1_item {
+                padding: 8px;
+            }
+        }
+    }
 }
 
-/* sm */
 @media (max-width: 640px) {
-    /* .container {
-        max-width: 475px;
-    } */
+
+    /* Numbers */
+    .numbers-container {
+
+        .numbers-col1 {
+            height: 320px;
+
+            .numbers-col1_item {
+                h1 {
+                    font-size: var(--font-title-2);
+                }
+
+                padding: 8px;
+            }
+        }
+    }
 }
 
-/* xs */
 @media (max-width: 520px) {
-    /* .container {
-        width: 100%;
-    } */
 
     .banner-body_subContent {
         display: none;
@@ -436,6 +491,11 @@ h3 {
 
 
     /* Number */
+
+    .numbers-container {
+        gap: 24px;
+
+    }
 
     .numbers-col2 {
         gap: 16px;
@@ -449,19 +509,9 @@ h3 {
 
     .numbers-col1_item {
         height: fit-content, auto;
+
         h1 {
             font-size: var(--font-title-2);
         }
     }
-
-    .overlay-ctn {
-        .overlay-body {
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-        }
-    }
-
-
-
 }
