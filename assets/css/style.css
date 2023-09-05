@@ -288,10 +288,17 @@ a.sc-img-btn{
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0.9px;
+    
 }
 
 .sc3-banner-title{
-    padding-left: 375px;
+    align-self: center;
+    width: 1170px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
 }
 
 .sc3-card{
@@ -401,11 +408,12 @@ a.sc-img-btn{
 }
 
 .sc5-title{
+    width: 1170px;
+    height: 78px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     gap: 16px;
-    align-self: stretch;
 }
 
 .sc5-list{
@@ -447,7 +455,6 @@ a.sc-img-btn{
 }
 
 .sc5-content-title{
-
     width: 370px;
     height: 64px;
     overflow: hidden;
@@ -604,9 +611,6 @@ footer{
     width: 100vw;
     display: flex;
     margin-top: 120px;
-    @media (min-width:1280px) {
-        padding-top: ;
-    }
 }
 
 .ft-main,.ft-banner{
@@ -621,8 +625,9 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    top: 380px;
-    padding-left: 375px;
+    top: 340px;
+    margin-left: 375px;
+    margin-top: 40px;
 }
 
 .ft-main{
@@ -634,7 +639,6 @@ footer{
     height: 204px;
     margin: 140px 375px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-
 }
 
 .ft-content{
@@ -774,21 +778,65 @@ footer{
 /* responsive */
 
 @media (max-width: 1280px){
-    div.ft-main, div.ft-end, div.section6{
+
+    div.ft-main, div.ft-end{
         width: auto;
-        
+
+    }
+
+    div.section1, div.section2, div.section5, div.section6{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.sc2-content, div.sc5-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.sc3-card-banner, div.sc4-card-banner{
+        flex-wrap: wrap;
+
+    }
+
+    div.section5{
+        flex-wrap: wrap;
     }
 }
 
-@media (min-width: 1024px){
-    div.ft-main, div.ft-end, div.section6{
+@media (max-width: 1024px){
+    div.ft-main, div.ft-end{
         width: auto;
+    }
+
+    div.section1, div.section2, div.section5, div.section6{
+        flex-direction: row;
+        justify-self: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.section5{
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 768px){
-    div.ft-main, div.ft-end, div.section6{
+    div.ft-main,div.ft-end{
         width: auto;
+       
+    }
+
+    div.section1, div.section2, div.section5, div.section6{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.section5{
         flex-wrap: wrap;
     }
 }

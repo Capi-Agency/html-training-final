@@ -1,20 +1,15 @@
 .frame1{
-    padding-left: 375px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    display: flex;
-    width: 1170px;
+    
     gap: 80px;
 }
 
 .frame2{
-    padding-left: 375px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    display: flex;
-    width: 1170px;
     gap: 80px;
 }
 
@@ -22,6 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 720px;
 }
 
 .frame-content-hd{
@@ -144,7 +140,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 0 0;
     background: rgba(255, 255, 255, 0.00);
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.20);
     gap: 32px;
@@ -172,4 +167,82 @@
     font-weight: 700;
     line-height: 30px; 
     letter-spacing: 1.5px;
+}
+
+
+/* responsive */
+@media (max-width: 1280px){
+    section.frame1, section.frame2, section.frame4{
+        flex-wrap: wrap;
+    }
+
+    section.frame3 {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    div.frame3-content{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.frame4-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.frame3, section.frame4, div.frame3-list{
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    div.gt-card{
+        bottom: 150px;
+    }
+    div.section3{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px){
+    section.frame1, section.frame2{
+        flex-wrap: wrap;
+    }
+
+    section.frame3{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    div.frame3-content{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.frame4-content{
+        flex-wrap: wrap;
+    }
+    
+    section.frame3, section.frame4{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    section.frame1, section.frame2{
+        flex-wrap: wrap;
+    }
+
+
+    div.frame3-content{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.frame4-content{
+        flex-wrap: wrap;
+    }
+    section.frame3,section.frame4{
+        flex-wrap: wrap;
+    }
 }
