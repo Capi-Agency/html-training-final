@@ -217,7 +217,7 @@ a {
     gap: 130px;
     width: 1170px;
     height: 390px;
-    padding: 120px 375px 120px 375px;
+    margin: 120px 375px 120px 350px;
 }
 
 .section1-banner {
@@ -268,7 +268,7 @@ a {
 
 
 .section2 {
-    padding: 0px 375px 120px 375px;
+    margin: 0px 360px 120px 360px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -306,7 +306,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 60px;
-    padding: 120px 375px 60px 375px;
+    margin: 120px 375px 60px 375px;
 }
 
 .service-title {
@@ -365,7 +365,7 @@ a {
 }
 
 .section3{
-    width: 1920px;
+    width: 100%;
 height: 586px;
 flex-shrink: 0;
 }
@@ -385,8 +385,8 @@ flex-shrink: 0;
 
 .section4 {
     position: relative;
-    width: 1920px;
-    height: 591px;
+    width: 100%;
+    height: 586px;
     flex-shrink: 0;
     z-index: 0;
     padding-top: 180px;
@@ -436,7 +436,7 @@ flex-shrink: 0;
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    padding: 120px 375px 0px 375px;
+    margin: 120px 375px 0px 375px;
 }
 
 .section5-title {
@@ -506,7 +506,7 @@ flex-shrink: 0;
     width: 1170px;
     align-items: flex-start;
     gap: 100px;
-    padding: 120px 375px 120px 375px;
+    margin: 120px 375px 120px 375px;
 }
 
 .section6 .info {
@@ -629,7 +629,7 @@ flex-shrink: 0;
     position: absolute;
     z-index: 1;
     top: 50px;
-    padding: 140px 375px 140px 375px;
+    padding-left: 375px;
 
 }
 
@@ -693,6 +693,10 @@ flex-shrink: 0;
     width: 100%;
     position: absolute;
     z-index: -1;
+}
+.section7 {
+    padding-top: 120px;
+    width: 100%;
 }
 
 
