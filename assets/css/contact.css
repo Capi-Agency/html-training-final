@@ -14,7 +14,7 @@
     flex-direction: column;
     gap: 36px;
 
-    >p{
+    >p {
         color: var(--primary);
     }
 }
@@ -40,6 +40,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    h6 {
+        text-align: start;
+    }
 }
 
 .location-item__img {
@@ -48,16 +52,96 @@
     gap: 28px;
     background-image: url(../images/location.png);
     padding: 24px;
-
     align-items: flex-start;
-}
 
-.location-item__img {
     >.location-heading>p {
         color: var(--secondary-4);
     }
 
     >.location-content>h6 {
         color: var(--secondary-4);
+        text-align: start;
+    }
+}
+
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1132px) {
+
+    .location-layout {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 24px;
+
+        .location-item__img {
+            gap: 28px;
+            padding: 20px;
+
+            >.location-heading>p {
+                color: var(--secondary-4);
+            }
+
+            >.location-content>h6 {
+                color: var(--secondary-4);
+                text-align: start;
+            }
+        }
+
+        .location-item {
+            gap: 28px;
+            padding: 20px;
+
+        }
+    }
+
+    .location-heading {
+        gap: 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .location-layout {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 24px;
+
+        .location-item__img {
+            gap: 28px;
+            padding: 20px;
+
+            >.location-heading>p {
+                color: var(--secondary-4);
+            }
+
+            >.location-content>h6 {
+                color: var(--secondary-4);
+                text-align: start;
+            }
+        }
+
+        .location-item {
+            gap: 28px;
+            padding: 20px;
+
+        }
+    }
+
+    .location-heading {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .places-ctn {
+        gap: 32px;
+        padding: 24px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .places-ctn {
+        width: 80%;
     }
 }
