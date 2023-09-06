@@ -50,6 +50,8 @@
 }
 
 .navmenu {
+    display: flex;
+    flex-direction: column;
     border-radius: 6px;
     background: var(--light-gray-light-gray-4, #EEF0F2);
 }
@@ -70,9 +72,7 @@
     align-items: center;
     flex: 1 0 0;
     width: 335px;
-    height: 264px;
-    padding: 64px 0;
-    
+
 }
 
 .Listproduct-1 img {
@@ -94,10 +94,214 @@
 
 .Listproduct-list-content h2 {
     width: 200px;
+    color: #323030;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
 }
+
 .Listproduct-list-item {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     grid-gap: 28px;
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
+}
+
+.Listproduct-item-content {
+    margin-bottom: 24px;
+}
+
+.Listproduct-item-content2 {
+    margin-top: 120px;
+    margin-bottom: 24px;
+}
+
+.Listproduct-item-content3 {
+    margin-top: 120px;
+    margin-bottom: 24px;
+}
+.Listproduct3 {
+    margin-bottom: 184px;
+}
+.box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    padding: 12px 12px 12px 4px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #EEF0F2;
+    cursor: pointer;
+    color: var(--dark-gray-dark-gray-2, #252C32);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+}
+
+.dropdown .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    margin-top: 63px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s;
+}
+.dropdown.active .items {
+    visibility: visible;
+}
+
+.dropdown .items a {
+    position: relative;
+    display: flex;
+    left: 100%;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 2.5px;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+   
+    border-radius: 6px;
+}
+.dropdown.active .items a {
+    left: 0;
+}
+
+.dropdown .left-icon,
+.dropdown .right-icon {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    display: 2px;
+    width: 15px;
+    height: 5px;
+    background: #000;
+    border-radius: 40px;
+    transition: .5s;
+}
+.dropdown .left-icon {
+    transform: rotate(45deg);
+}
+.dropdown .right-icon {
+    top: 12px;
+    transform: rotate(-45deg);
+}
+.dropdown.active .left-icon {
+    transform: rotate(135deg);
+}
+.dropdown.active .right-icon {
+    transform: rotate(-135deg);
+}
+.dropdown-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dropdown2 {
+    position: relative;
+    display: flex;
+    padding: 12px 12px 12px 4px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #EEF0F2;
+    cursor: pointer;
+    color: var(--dark-gray-dark-gray-2, #252C32);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+}
+
+.dropdown2 .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    margin-top: 63px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s;
+}
+.dropdown2.active .items {
+    visibility: visible;
+}
+
+.dropdown2 .items a {
+    position: relative;
+    display: flex;
+    left: 100%;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 2.5px;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+   
+    border-radius: 6px;
+}
+.dropdown2.active .items a {
+    left: 0;
+}
+
+.dropdown2 .left-icon,
+.dropdown2 .right-icon {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    display: 2px;
+    width: 15px;
+    height: 5px;
+    background: #000;
+    border-radius: 40px;
+    transition: .5s;
+}
+.dropdown2 .left-icon {
+    transform: rotate(45deg);
+}
+.dropdown2 .right-icon {
+    top: 12px;
+    transform: rotate(-45deg);
+}
+.dropdown2.active .left-icon {
+    transform: rotate(135deg);
+}
+.dropdown2.active .right-icon {
+    transform: rotate(-135deg);
+}
+.dropdown2-icon {
+    display: flex;
+    flex-direction: column;
 }

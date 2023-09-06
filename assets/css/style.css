@@ -1,7 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-   
+    font-family: 'Roboto';
+}
+main {
+    width: 100%;
 }
 
 h1 {
@@ -691,3 +694,46 @@ flex-shrink: 0;
     position: absolute;
     z-index: -1;
 }
+
+
+
+
+
+@media (max-width: 1440px) {
+    .banner {
+        max-width: 1440px; 
+    }
+    .banner-content {
+        width: 40%;
+    }
+    .section1 {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 130px;
+        width: 1170px;
+        height: 390px;
+        padding: 120px 375px 120px 375px;
+       
+    }
+}
+
+
+@media (max-width: 1132px) {
+ 
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 520px) {
+ 
+}
+
+
+@media (max-width: 375px) {
+ 
+}
+
