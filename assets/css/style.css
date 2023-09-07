@@ -553,54 +553,6 @@ button {
     border: none;
 }
 
-/* btn-dropdown */
-
-.btn-dropdown {
-    display: flex;
-    padding: 12px 12px 12px 4px;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
-
-.btn-dropdown>h4 {
-    text-align: start;
-
-}
-
-.btn-dropdown-active {
-    text-align: start;
-    display: flex;
-    padding: 12px 12px 12px 4px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 6px;
-    width: 100%;
-    background: var(--secondary-3);
-}
-
-.btn-dropdown-active>h4 {
-    text-align: start;
-    color: var(--secondary-0);
-    font-weight: 600;
-    line-height: 28px;
-}
-
-/* btn-tab */
-
-.btn-tab {
-    display: flex;
-    padding: 12px 8px 8px 44px;
-    align-items: center;
-    gap: 4px;
-    border-radius: 6px;
-    width: 100%;
-}
-
-.btn-tab:hover {
-    background-color: var(--secondary-3);
-}
-
 /* Header */
 
 header {
@@ -652,6 +604,7 @@ header img {
     display: none;
 }
 
+/* Hamburger */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -1187,6 +1140,7 @@ textarea::placeholder {
 
     /* Header */
     header {
+        z-index: 1000;
         .header-logo>img {
             display: flex;
             align-items: center;
@@ -1217,7 +1171,6 @@ textarea::placeholder {
             height: 0;
             margin: 0;
             padding: 0 40px;
-            border: 0;
             transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
             color: var(--secondary-4);
         }
