@@ -141,7 +141,6 @@ p {
     width: 60%;
     align-items: center;
     margin: auto;
-    padding: 300px 375px;
     gap: 24px
 }
 
@@ -155,6 +154,7 @@ p {
     line-height: 18px;
     /* 128.571% */
     letter-spacing: 4.5px;
+    margin-top: 400px;
 }
 
 .banner-content h1 {
@@ -740,7 +740,9 @@ flex-shrink: 0;
     }
     .section1 {
         width: 90%;
-       margin: 120px auto;
+       margin: 120px auto 600px auto;
+       display: flex;
+       flex-wrap: wrap;
     }
     .section2 {
         width: 1300px;
@@ -749,6 +751,23 @@ flex-shrink: 0;
     .section5 {
         width: 90%; 
     }
+    .section3 {
+        margin: 0px auto 250px auto;
+    }
+    .service-title {
+        width: 80%;
+    }
+    .service-list {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .partner-title {
+        width: 80%;
+    }
+    .img-background-section {
+        height: 400px;
+    } 
 }
 
 
