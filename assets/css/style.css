@@ -313,14 +313,16 @@ a {
 .service-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
+    width: 1170px;
 }
 
 .service-list {
     display: flex;
     align-items: center;
     gap: 32px;
+    width: 1170px;
 }
 
 .service-list-item {
@@ -423,6 +425,14 @@ flex-shrink: 0;
     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.20);
 }
 
+.partner-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 1170px;
+}
+
 .partner-title h2,
 .partner-title h1 {
     color: #FFF;
@@ -440,10 +450,12 @@ flex-shrink: 0;
 }
 
 .section5-title {
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
+    width: 1170px;
 }
 
 .post {
@@ -452,6 +464,7 @@ flex-shrink: 0;
     width: 60%;
     margin: 0 auto;
     gap: 32px;
+    width: 1170px;
 }
 
 .post-list {
@@ -495,9 +508,7 @@ flex-shrink: 0;
     letter-spacing: 1.32px;
     text-transform: uppercase;
     border-bottom: 2px solid #49BEFF;
-
 }
-
 .section5 p {
     height: 64px;
 }
@@ -507,7 +518,7 @@ flex-shrink: 0;
     width: 1170px;
     align-items: flex-start;
     gap: 100px;
-    margin: 120px 375px 120px 375px;
+    margin: 120px auto 120px auto;
 }
 
 .section6 .info {
@@ -618,15 +629,15 @@ flex-shrink: 0;
 
 .footer {
     display: flex;
-    width: 1170px;
-    padding: 140px 0px 147px 0px;
-
-    align-items: flex-start;
+    width: 100%;
+    /* padding: 140px 0px 147px 0px; */
+    align-items: center;
     gap: 40px;
     position: absolute;
     z-index: 1;
-    top: 50px;
-    padding-left: 375px;
+    top: 300px;
+    /* padding-left: 375px; */
+    justify-content: center;
 
 }
 
@@ -709,34 +720,35 @@ flex-shrink: 0;
     }
     .section1 {
         width: 90%;
-       margin: auto;
-     padding: 120px 0px 120px 120px;
-       
+       margin: 120px auto;
     }
     .section2 {
         width: 1300px;
-        margin: auto;
-    }
-    .service {
-        margin-left: 170px;
-    }
-    .partner {
-        padding-left: 160px;
+        margin: 120px auto;
     }
     .section5 {
-        width: 90%;
-        margin-left: 160px;
+        width: 90%; 
     }
 }
 
-
-@media (max-width: 1132px) {
- 
-}
-
-
 @media (max-width: 768px) {
-
+    .banner {
+        max-width: 1440px; 
+    }
+    .banner-content {
+        width: 40%;
+    }
+    .section1 {
+        width: 90%;
+       margin: 120px auto;
+    }
+    .section2 {
+        width: 1300px;
+        margin: 120px auto;
+    }
+    .section5 {
+        width: 90%; 
+    }
 }
 
 
