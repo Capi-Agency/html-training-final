@@ -3,10 +3,10 @@
     margin: 0;
     font-family: 'Roboto';
 }
-/* 
+
 html {
     overflow-x: hidden;
-} */
+}
 
 section {
     width: 100%;
@@ -16,6 +16,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 120px;
+    
 }
 
 header{
@@ -80,15 +81,17 @@ a:visited{
 }
 
 .main-img{
-    height: 1083px;
+    background-image: url('/assets/images/Section.jpg'); 
+
+    height: 1030px;
+    background-repeat: no-repeat;
 }
 
 .sc-img-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    bottom: 600px;
+    margin-top: 353px;
     gap: 40px;
 }
 
@@ -119,12 +122,13 @@ a.sc-img-btn{
     text-decoration: none;
 }
 
-.sc-img-scroll{
-    color: #FFF;
+a.sc-img-scroll{
+    text-decoration: none;
+    color: white;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    padding-top: 300px;
+    padding-top: 385px;
 }
 
 
@@ -291,6 +295,8 @@ a.sc-img-btn{
     
 }
 
+
+
 .sc3-banner-title{
     align-self: center;
     width: 1170px;
@@ -299,6 +305,8 @@ a.sc-img-btn{
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    padding-top: 40px;
+    
 }
 
 .sc3-card{
@@ -307,6 +315,7 @@ a.sc-img-btn{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    z-index: 1;
 }
 
 .sc3-mini-card{
@@ -334,6 +343,7 @@ a.sc-img-btn{
     font-style: normal;
     font-weight: 700;
     line-height: 33px;
+    
 }
 
 .sc3-card-text{
@@ -355,10 +365,11 @@ a.sc-img-btn{
 }
 
 .sc3-card-btn{
-    margin: 25px 107.17px 50px 106.5px;
+    width: 90px;
     padding: 16px 40px;
     display: flex;
     justify-content: center;
+    align-self: center;
     border: 1px solid #111;
 
     & .btn-text{
@@ -608,37 +619,40 @@ a.sc-img-btn{
 }
 
 footer{
-    width: 100vw;
+    background-image: url('/assets/images/footer.png');
+    background-repeat: no-repeat;
+    height: 573px;
+    width: 100%;
     display: flex;
     margin-top: 120px;
+    justify-content: center;
 }
 
-.ft-main,.ft-banner{
-    position: absolute;
-    width: 100%;
-   
-}
 
 .ft-end{
     width: 1170px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
-    top: 340px;
-    margin-left: 375px;
-    margin-top: 40px;
+    
+    
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
 
 .ft-main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    justify-items: center;
-    width: 1170px;
-    height: 204px;
-    margin: 140px 375px;
+    height: 204px; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    gap: 26px;
+    
 }
 
 .ft-content{
@@ -649,6 +663,7 @@ footer{
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 27.23px;
 }
 
 .ft-contact{
@@ -678,12 +693,6 @@ footer{
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-
-    /* color: var(--1, #00A3FF);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    text-decoration-line: underline; */
 }
 
 .frame-tag {
@@ -779,9 +788,12 @@ footer{
 
 @media (max-width: 1280px){
 
-    div.ft-main, div.ft-end{
-        width: auto;
-
+    div.footer-section, .ft-main, div.ft-content, div.ft-contact{
+        width: 100%;
+        flex-wrap: wrap;
+        /* justify-self: center; */
+        text-align: center;
+        /* margin-top: 150px; */
     }
 
     div.section1, div.section2, div.section5, div.section6{
@@ -798,17 +810,24 @@ footer{
 
     div.sc3-card-banner, div.sc4-card-banner{
         flex-wrap: wrap;
-
     }
 
-    div.section5{
+    div.sc6-text, div.sc6-contact{
         flex-wrap: wrap;
     }
+
 }
 
 @media (max-width: 1024px){
-    div.ft-main, div.ft-end{
-        width: auto;
+    footer, div.footer-section, div.ft-main, div.ft-end, div.ft-content, div.ft-contact{
+        flex-wrap: wrap;
+        justify-self: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    {
+        justify-content: center;
     }
 
     div.section1, div.section2, div.section5, div.section6{
@@ -824,9 +843,37 @@ footer{
 }
 
 @media (max-width: 768px){
-    div.ft-main,div.ft-end{
-        width: auto;
-       
+    footer, div.footer-section, div.ft-main, div.ft-end, div.ft-content, div.ft-contact{
+        flex-wrap: wrap;
+        justify-self: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    div.section1, div.section2, div.section5, div.section6{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.section5{
+        flex-wrap: wrap;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px){
+    footer, div.footer-section, div.ft-main, div.ft-end, div.ft-content, div.ft-contact{
+        flex-wrap: wrap;
+        justify-self: center;
+        text-align: center;
+        padding-top: 50px;
     }
 
     div.section1, div.section2, div.section5, div.section6{

@@ -46,3 +46,25 @@
     gap: 20px;
 
 }
+
+/* responsive */
+@media (max-width: 1280px){
+    div.blog-content, .blog-content-reverse{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1024px){
+    div.blog-content, .blog-content-reverse{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    div.blog-content, .blog-content-reverse{
+        flex-wrap: wrap;
+        
+    }
+}

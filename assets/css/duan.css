@@ -88,3 +88,21 @@
     letter-spacing: 2px;
 }
 
+/* responsive */
+@media (max-width: 1280px){
+    div.frame ,div.frame-reverse{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px){
+    div.frame ,div.frame-reverse{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    div.frame ,div.frame-reverse{
+        flex-wrap: wrap;
+    }
+}

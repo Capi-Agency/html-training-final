@@ -1,9 +1,15 @@
 .frame-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+}
+
+.frame-location-title{
     width: 1170px;
     display: flex;
     flex-direction: column;
-    align-self: center;
-    gap: 66px;
+    align-items: flex-start;
 }
 
 .frame-dd-img{
@@ -14,5 +20,29 @@
 
 .background-img{
     background-color: #F2F2F2;
-    
+}
+
+/* responsive */
+@media (max-width: 1280px){
+    div.frame-location, div.frame-location-title, div.frame-dd-img{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px){
+    div.frame-location, div.frame-location-title, div.frame-dd-img{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    div.frame-location, div.frame-location-title, div.frame-dd-img{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
