@@ -1,6 +1,9 @@
 const body = document.querySelector("body")
 const hamburger = document.getElementById("hamburger");
 const mobileUl = document.getElementById("mobile_ul");
+const subUlBtn = document.getElementById("sub-ul__btn");
+const subUl = document.querySelector(".prd__sub-ul");
+
 let isOpen = true
 
 hamburger.onclick = function(){
@@ -13,4 +16,8 @@ hamburger.onclick = function(){
         body.style.overflow = "scroll";
         hamburger.src = "./public/images/Hamburger_icon.svg.png";
     }
+}
+
+subUlBtn.onclick = function(){
+    subUl.style.display = "block"
 }
